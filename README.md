@@ -214,6 +214,20 @@ ps aux | grep arpspoof
 
 ---
 
+## 🔍 Observations
+
+- Victim internet remained active ✅  
+  → IP forwarding ensured no network disruption  
+
+- ARP table successfully poisoned ✅  
+  → Victim mapped gateway IP to attacker's MAC  
+
+- Traffic routed through attacker silently ✅  
+  → MITM position achieved successfully  
+
+- No alert shown to victim ❌  
+  → ARP has no authentication mechanism
+
 ## 👁️ What an Attacker Can See
 
 When ARP spoofing is active and the victim browses normally:
