@@ -6,6 +6,13 @@
 > Unauthorized use is illegal and unethical.
 
 ---
+## 🚀 What You'll Learn
+
+- How ARP Spoofing works in real networks  
+- How attackers become Man-in-the-Middle  
+- How to intercept traffic safely in a lab  
+- How to defend against this attack
+
 
 ## 📌 What is ARP Spoofing?
 
