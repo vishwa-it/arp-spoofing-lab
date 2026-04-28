@@ -186,6 +186,7 @@ arp -a
 Look at the entry for the **gateway IP** (`192.168.20.2`). If the attack is working,
 its MAC address will match Kali's MAC address — not the real router's.
 
+ ![arp-table](images/arp-table.png)
 ---
 
 ### Step 6 — Monitor Traffic with tcpdump (Optional)
