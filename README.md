@@ -140,7 +140,7 @@ sudo arpspoof -i eth0 -t 192.168.20.128 192.168.20.2
 - Continuously sends fake ARP replies to the victim
 - Tells the victim: "I (Kali) am the router — send all your traffic to me"
 
-![ARP Spoof Victim](images/arpspoof.png)
+ ![Arpspoof the Victim](images/arpspoof-1.png)
 
 > Leave this terminal running. Do not close it.
 
@@ -157,6 +157,8 @@ sudo arpspoof -i eth0 -t 192.168.20.2 192.168.20.128
 **What this does:**
 - Tells the gateway (router): "I (Kali) am the victim — send their traffic to me"
 - This completes the **two-way MITM** — traffic flows both directions through Kali
+
+![Arpspoof the Victim](images/arpspoof-2.png)
 
 > Leave this terminal running too.
 
