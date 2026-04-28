@@ -135,6 +135,8 @@ sudo arpspoof -i eth0 -t 192.168.20.128 192.168.20.2
 - Continuously sends fake ARP replies to the victim
 - Tells the victim: "I (Kali) am the router — send all your traffic to me"
 
+![ARP Spoof Victim](images/arpspoof.png)
+
 > Leave this terminal running. Do not close it.
 
 ---
