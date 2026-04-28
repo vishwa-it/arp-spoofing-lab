@@ -91,6 +91,8 @@ sudo netdiscover -i eth0 -r 192.168.20.0/24
 - Scans the entire `192.168.20.0/24` network
 - Lists all active devices with their IP and MAC addresses
 - Helps confirm victim IP (`192.168.20.128`) and gateway IP (`192.168.20.2`)
+
+  
   ![Netdiscover Output](images/netdiscover.png)
 
 
