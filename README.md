@@ -86,14 +86,15 @@ Before attacking, identify the victim IP and gateway IP.
 ```bash
 sudo netdiscover -i eth0 -r 192.168.20.0/24
 ```
-
+ ![Netdiscover Output](images/netdiscover.png)
+ 
 **What this does:**
 - Scans the entire `192.168.20.0/24` network
 - Lists all active devices with their IP and MAC addresses
 - Helps confirm victim IP (`192.168.20.128`) and gateway IP (`192.168.20.2`)
 
   
-  ![Netdiscover Output](images/netdiscover.png)
+ 
 
 
 
@@ -127,6 +128,9 @@ Open **Terminal 1** and run:
 sudo arpspoof -i eth0 -t 192.168.20.128 192.168.20.2
 ```
 
+![Arpspoof the Victim](images/arpspoof-1.png)
+
+
 **Breaking down the command:**
 
 | Part                | Meaning                                      |
@@ -140,7 +144,6 @@ sudo arpspoof -i eth0 -t 192.168.20.128 192.168.20.2
 - Continuously sends fake ARP replies to the victim
 - Tells the victim: "I (Kali) am the router — send all your traffic to me"
 
- ![Arpspoof the Victim](images/arpspoof-1.png)
 
 > Leave this terminal running. Do not close it.
 
@@ -154,11 +157,13 @@ Open **Terminal 2** and run:
 sudo arpspoof -i eth0 -t 192.168.20.2 192.168.20.128
 ```
 
+![Arpspoof the Victim](images/arpspoof-2.png)
+
+
 **What this does:**
 - Tells the gateway (router): "I (Kali) am the victim — send their traffic to me"
 - This completes the **two-way MITM** — traffic flows both directions through Kali
 
-![Arpspoof the Victim](images/arpspoof-2.png)
 
 > Leave this terminal running too.
 
